@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+    h2{
+        font-weight: 100;
+        color:rgb(92, 91, 91);
+    }
+    .out{
+        background-color: #F6F8FA;
+        height: 255px;
+        width:350px;
+        margin-top: 50px;
+        border-radius: 8px;
+        border:1px solid lightgrey;
+       
+    }
+    .out2{
+        height: 40px;
+        width:350px;
+        border:1px solid lightgrey;
+        border-radius: 8px;
+    }
+    .down{
+        margin-top:120px;
+    }
+    
+ 
+ 
+</style>
+</head>
+<body>
+    <div class="container">
+        <img class="image image-circle mx-auto d-block" src="data:image/png;base64,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">
+        <div class="text-center mt-3">
+            <h2>Sign in to GitHub</h2>
+        </div>
+        <div class=" col mx-auto d-block out">
+            <div class="form-group">
+                <label for="email"class="mt-4 ml-1">Username or email address</label><br>
+                <input id="email" class="form-control ">
+            </div>
+            <div class="form-group">
+                <label for="pass" class=" ml-1">Password</label>
+                <a href="forger" class="float-right">Forgot password?</a>
+                <input id="pass" class="form-control">
+            </div>
+            <button class="btn btn-success btn-block bt">login</button>
+        </div>
+        <div class="col mx-auto mt-3 out2 text-center p-2">
+            <p>New to GitHub? <a href="ww">Create an account.</a></p>
+        </div>
+        <div class="small">
+
+            <ul class="nav justify-content-center down">
+                <li class="nav-item">
+              <a class="nav-link" href="#">Terms</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Privacy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">Security</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Contact GitHub</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</body>
+</html>
